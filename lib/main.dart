@@ -652,8 +652,8 @@ class _WelcomePageState extends State<WelcomePage> with WidgetsBindingObserver {
 
     await flutterLocalNotificationsPlugin.zonedSchedule(
       0,
-      'Daily reminder',
-      'It\'s time for your daily survey!',
+      'It\'s time to check-in!',
+      'How was your day?',
       // dateTimeNow.isBefore(todayAtTime) ? tz.TZDateTime.from(todayAtTime, tz.local) : scheduledDate,
       scheduledDate,
       // testScheduledDate,
@@ -943,7 +943,7 @@ class _AuthPageState extends State<AuthPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Login/Register')),
+      appBar: AppBar(title: Text('Qu_lab_EMA')),
       resizeToAvoidBottomInset: false, // 防止布局在键盘弹出时调整
       body: Padding(
         padding: const EdgeInsets.all(16.0),
