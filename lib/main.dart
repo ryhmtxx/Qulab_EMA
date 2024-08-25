@@ -858,7 +858,7 @@ class _WelcomePageState extends State<WelcomePage> with WidgetsBindingObserver {
           SizedBox(height: 20),
           ElevatedButton(
             onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HistoryPage())),
-            child: Text('View History Results'),
+            child: Text('My History Results'),
           ),
           Spacer(), // 另一个Spacer用于调整与底部的间距
           Padding(
