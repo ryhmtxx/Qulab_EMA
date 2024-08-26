@@ -12,7 +12,8 @@
     <application
         android:label="Qulab_EMA"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:debuggable="false">
         <activity
             android:name=".MainActivity"
             android:exported="true"

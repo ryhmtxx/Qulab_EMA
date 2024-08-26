@@ -1003,7 +1003,7 @@ class _AuthPageState extends State<AuthPage> {
             Padding(
               padding: EdgeInsets.only(bottom: 10.0), // 调整与底部的间隔
               child: Text(
-                'If you encounter any issues with the app\nPlease email us at yanqulab@gmail.com',
+                'If you encounter any issues with the app.\nPlease email us at yanqulab@gmail.com',
                 style: TextStyle(fontSize: 16), // 可以调整字体大小
                 textAlign: TextAlign.center, // 文本内容居中
               ),
@@ -1023,6 +1023,9 @@ class SurveyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       navigatorKey: navigatorKey,
+      // theme:ThemeData(
+      //   primarySwatch: Colors.blue,
+      // ),
       home: FutureBuilder<Map<String, dynamic>?>(
         future: Api.getCurrentUser(),
         builder: (context, snapshot) {

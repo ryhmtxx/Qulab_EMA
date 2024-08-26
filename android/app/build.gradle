@@ -78,6 +78,9 @@ android {
     }
 
     buildTypes {
+        debug {
+            debuggable true
+        }
         release {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
@@ -85,6 +88,12 @@ android {
             signingConfig signingConfigs.release
             minifyEnabled false
             shrinkResources false
+        }
+
+        staging {
+            initWith debug
+            debuggable false
+            matchingFallbacks = ['debug']
         }
     }
 }
