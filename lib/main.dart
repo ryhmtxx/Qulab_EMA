@@ -643,6 +643,7 @@ class _WelcomePageState extends State<WelcomePage> with WidgetsBindingObserver {
       channelDescription: 'channel_description',
       importance: Importance.max,
       priority: Priority.high,
+      largeIcon: DrawableResourceAndroidBitmap('ic_notification')
     );
     var iosDetails = DarwinNotificationDetails();
     var platformDetails = NotificationDetails(
