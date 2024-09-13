@@ -1024,6 +1024,7 @@ class SurveyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       navigatorKey: navigatorKey,
+      debugShowCheckedModeBanner: false,
       // theme:ThemeData(
       //   primarySwatch: Colors.blue,
       // ),
