@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'api.dart';
 import 'dart:convert';
 import 'package:multi_select_flutter/multi_select_flutter.dart';
+import 'main.dart';
 
 
 class RegisterPage extends StatefulWidget {
@@ -163,8 +164,11 @@ class _RegisterPageState extends State<RegisterPage> {
             actions: [
               TextButton(
                 onPressed: () {
-                  Navigator.of(context).pop();
-                  Navigator.pop(context); // Navigate back to the login page
+                  Navigator.of(context).pop(); // Close the dialog
+                  Navigator.of(context).pushAndRemoveUntil(
+                    MaterialPageRoute(builder: (context) => AuthPage()), // Replace with your main screen
+                    (Route<dynamic> route) => false, // This removes all previous routes
+                  );
                 },
                 child: Text('OK'),
               ),
@@ -455,7 +459,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               child: DropdownButtonFormField<String>(
                                 value: _dobyController.text.isEmpty ? null : _dobyController.text,
                                 decoration: InputDecoration(labelText: 'Year'),
-                                items: List.generate(45, (index) => (2024 - index).toString()).map((String value) {
+                                items: List.generate(75, (index) => (2024 - index).toString()).map((String value) {
                                   return DropdownMenuItem<String>(
                                     value: value,
                                     child: Text(value),

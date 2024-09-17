@@ -135,7 +135,34 @@ class Api {
     );
   }
 
-    static Future<http.Response> sendResetCode(String email) {
+
+  static Future<http.Response> sendDeleteCode(String email) {
+    return http.post(
+      Uri.parse('$baseUrl/request-delete-accountryh'),
+      headers: <String, String>{
+        'Content-Type': 'application/json; charset=UTF-8',
+      },
+      body: jsonEncode(<String, String>{
+        'email': email,
+      }),
+    );
+  }
+
+  static Future<http.Response> verifyCodeAndDeleteAccount(String email, String code) {
+    return http.post(
+      Uri.parse('$baseUrl/delete-accountryh'),
+      headers: <String, String>{
+        'Content-Type': 'application/json; charset=UTF-8',
+      },
+      body: jsonEncode(<String, String>{
+        'email': email,
+        'code': code,
+      }),
+    );
+  }
+
+
+  static Future<http.Response> sendResetCode(String email) {
     return http.post(
       Uri.parse('$baseUrl/request-password-resetryh'),
       headers: <String, String>{

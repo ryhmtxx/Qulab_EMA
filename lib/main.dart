@@ -11,6 +11,8 @@ import 'dart:convert';
 import 'api.dart';
 import 'RegisterInfo.dart';
 import 'Forgetpass.dart';
+import 'userform.dart';
+import 'Deleteaccount.dart';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
@@ -955,7 +957,7 @@ class _AuthPageState extends State<AuthPage> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => RegisterPage()),
+                  MaterialPageRoute(builder: (context) => UserAgreementPage()),
                 );
               },
               child: Text('Register From here'),
@@ -993,12 +995,23 @@ class _AuthPageState extends State<AuthPage> {
               },
               child: Text('Forgot Password?'),
             ),
+
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 signInUser(_emailController.text, _passwordController.text, context);
               },
               child: Text('Login'),
+            ),
+            SizedBox(height: 140),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DeleteAccountPage()),
+                );
+              },
+              child: Text('Delete my account'),
             ),
             Spacer(), // 将以下文本推到页面底部
             Padding(
