@@ -40,7 +40,7 @@ class _UserAgreementPageState extends State<UserAgreementPage> {
                     ),
                     Text(
                       '- Eligibility: You must be 18 or older, a graduate student or postdoc in STEM or Health Science at UCI, not pregnant, own a smartphone with Wi-Fi access, and be willing to complete EMA surveys.\n'
-                      '- Procedures: During the 3-5 month study, you will complete weekly EMA surveys (~5 minutes), provide baseline information (~10-20 minutes), and complete an exit assessment (~30 minutes).\n'
+                      '- Procedures: During the 3-5 month study, you will complete daily EMA surveys (~5 minutes), provide baseline information (~10-20 minutes), and complete an exit assessment (~30 minutes).\n'
                       '- Data Collected: Health-related data, including sleep, physical activity, and stress levels, will be stored electronically on a secure, password-protected computer network at UCI.\n'
                       '- Risks: There may be brief emotional distress during EMA surveys. Contact details will be provided for support.\n'
                       '- Benefits: No direct benefits, but this study may increase awareness of the connections between stress, sleep, and physical activities.',
