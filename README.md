@@ -25,8 +25,9 @@ Welcome to **Qulab_EMA**, your tool for tracking daily emotional states and patt
 <details>
   <summary><b>Track Progress</b>: View a graph of your emotional patterns over time to observe trends and manage stress, sleep, and physical activities. <b>(Click for more infomation)</b></summary>
     <div style="display: flex; justify-content: space-between;">
-    <img src="https://raw.githubusercontent.com/ryhmtxx/Qulab_EMA/refs/heads/main/iOS_screenshots/result.png" alt="result1" width="300">
-    <img src="https://raw.githubusercontent.com/ryhmtxx/Qulab_EMA/refs/heads/main/iOS_screenshots/restult2.png" alt="result2" width="300">
+    <img src="https://raw.githubusercontent.com/ryhmtxx/Qulab_EMA/refs/heads/main/iOS_screenshots/result.png" alt="result" width="300">
+    <img src="https://raw.githubusercontent.com/ryhmtxx/Qulab_EMA/refs/heads/main/iOS_screenshots/result1.png" alt="result1" width="300">
+    <img src="https://raw.githubusercontent.com/ryhmtxx/Qulab_EMA/refs/heads/main/iOS_screenshots/result2.png" alt="result2" width="300">
   </div>
 </details>
     
