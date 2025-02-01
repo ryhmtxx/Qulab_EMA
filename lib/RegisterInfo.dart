@@ -304,7 +304,7 @@ class _RegisterPageState extends State<RegisterPage> {
               },
               steps: [
                 Step(
-                  title: Text('Account Info'),
+                  title: Text('Account Info\nPlease use the email you got from us.\n"grp-smiles+XXX@hs.uci.edu"'),
                   content: Form(
                     key: _formKeys[0],
                     child: Column(
@@ -316,8 +316,8 @@ class _RegisterPageState extends State<RegisterPage> {
                             if (value == null || value.isEmpty) {
                               return 'Please enter your email';
                             }
-                            if (!value.contains('@')) {
-                              return 'Please enter a valid email address';
+                            if (!RegExp(r'^grp-smiles\+\d{3}@hs\.uci\.edu$').hasMatch(value)) {
+                              return 'Please use the hs.uci.edu email you got from us';
                             }
                             return null;
                           },
