@@ -51,7 +51,7 @@ Welcome to **Qulab_EMA**, your tool for tracking daily emotional states and patt
 
 ### For Android Devices
 Download the APK directly from the following link:
-[Download Qulab_EMA APK](https://github.com/ryhmtxx/Qulab_EMA/releases/download/Qulab_EMA/Qulab_EMA.apk)
+[Download Qulab_EMA APK](https://github.com/ryhmtxx/Qulab_EMA/releases/download/Qulab_EMA/Qulab_EMA_Jan31.apk)
 
 
 ### For iOS Devices
